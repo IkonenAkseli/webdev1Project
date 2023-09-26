@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Orders</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Front Page</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="users.html">List Users</a></li>
+          <li><a href="products.html">List Products</a></li>
+          <li><a href="cart.html">Shopping Cart</a></li>
+          <li><a href="orders.html">Orders</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Orders</h1>
+      <div id="notifications-container"></div>
+      <form>
+        <label>Search order by id</label>
+        <input id="searchbar">
+        <button type="submit">Search</button>
+      </form>
+      <div id="orders-container"></div>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2020 diipadaa etc etc.</p>
+    </footer>
+    <template id="order-template">
+        <div>
+            <h2 style="color:rgb(10, 175, 10)" class="order-id"></h2>
+            <div class="order-products"></div>
+        </div>
+    </template>
+    <template id="product-template">
+      <div class="item-row">
+        <h3 style="color:rgb(218, 24, 24)" class="product-name"></h3>
+        <p class="product-description"></p>
+        <p class="product-price"></p>
+        <p class="product-amount"></p>
+      </div>
+    </template>
+    <script src="js/utils.js"></script>
+    <script src="js/orders.js"></script>
+  </body>
+</html>
